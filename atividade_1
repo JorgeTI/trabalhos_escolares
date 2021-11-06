@@ -1,24 +1,24 @@
 while True:
-nome = input('Qual é o nome da criança?')
-idade = input('Qual é a sua idade?')
-idade = int(idade)
-menu = input('Encerrar o programa? [S/N] ')
-if menu == 'S':
-  print('Encerrando o programa...')
-  break
-if menu == 'N':
-  if idade=='Continuar':
+  nome = input('Qual é o nome da criança?')
+  idade = input('Qual é a sua idade?')
+  idade = int(idade)
+  menu = input('Encerrar o programa? [S/N] ')
+  if menu == 'S':
+    print('Encerrando o programa...')
     break
-  if idade <= 5:
-     ei = print('Ensino infantil')
-else:
-     if (idade > 5) and (idade < 11):
-         ef1 = print('Ensino fundamental I')
-     else:
-         if (idade > 10) and (idade < 15):
-           ef2 = print('Ensino fundamental II')
-       else:
-           if (idade >=15):
-               em = print('Ensino medio')
+  if menu == 'N':
+    if idade=='Continuar':
+      break
+    if idade <= 5:
+        ei = print('Ensino infantil')
+    else:
+        if (idade > 5) and (idade < 11):
+            ef1 = print('Ensino fundamental I')
+        else:
+            if (idade > 10) and (idade < 15):
+                ef2 = print('Ensino fundamental II')
+            else:
+                if (idade >=15):
+                    em = print('Ensino medio')
 else:
     print('Sem correpondência')
